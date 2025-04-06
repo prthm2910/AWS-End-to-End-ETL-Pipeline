@@ -1,4 +1,4 @@
-# 🧱 AWS Data Engineering Pipeline Project
+# 🧱 AWS Data Engineering ETL Pipeline Project
 
 This project demonstrates a complete data engineering workflow using AWS services to ingest, transform, and load data from Kaggle into AWS Redshift via AWS S3 and AWS Glue. The architecture is designed to automate metadata extraction, data transformation, and loading processes.
 
