@@ -12,7 +12,7 @@ The dataset used for this project is the [Adventure Works Sales Dataset](https:/
 
 ## 📝Data Model 
 
-![[Diagrams/Facts & Dim Tables.png|Data Model]]
+![Data Model](Diagrams/facts_and_dims.png)
 
 ---
 
@@ -31,7 +31,7 @@ The dataset used for this project is the [Adventure Works Sales Dataset](https:/
 
 ## 🧩 Architecture Overview
 
-![[Diagrams/Data Architecture.png|Data Architecture]]
+![Data Architecture](Diagrams/Data_Architecture.png)
 
 ---
 
@@ -42,7 +42,7 @@ The dataset used for this project is the [Adventure Works Sales Dataset](https:/
 - The dataset is programmatically downloaded using the `kaggle` module.
 - Extracted CSV files are uploaded to an Amazon S3 bucket using the `boto3` library.
 
-  [[Scripts/Kaggle_to_S3_using_boto3.ipynb|👉Data Ingestion Python Script]]
+  [👉Data Ingestion Python Script](Scripts/Kaggle_to_S3_using_boto3.ipynb)
 
 ### 2. Metadata Extraction with AWS Glue Crawler
 
@@ -55,9 +55,9 @@ The dataset used for this project is the [Adventure Works Sales Dataset](https:/
 - The job performs data cleaning and transformation using PySpark (e.g., handling null values, type casting).
 - The transformed data is written to a new location in Amazon S3 (processed zone).
 
-  [[Scripts/AW_ETL_Job.ipynb|👉ETL Script]]
+  [👉ETL Script](Scripts/AW_ETL_Job.ipynb)
 
-  ![[Diagrams/ETL Diagram.png|ETL Diagram]]
+  ![ETL Diagram](Diagrams/ETL_Diagram.png|)
 
 ### 4. Processed Data Cataloging
 
@@ -69,7 +69,7 @@ The dataset used for this project is the [Adventure Works Sales Dataset](https:/
 - A Redshift cluster is created.
 - Using `boto3` library, empty Redshift tables are generated to match the schema of the cleaned data.
 
-  [[Scripts/Redshift_Table_Creation_ETL_Job.ipynb|👉Target Redshift Setup Python Script]]
+  [👉Target Redshift Setup Python Script](Scripts/Redshift_Table_Creation_ETL_Job.ipynb)
 
 ### 6. Final ETL to Redshift
 
@@ -78,9 +78,9 @@ The dataset used for this project is the [Adventure Works Sales Dataset](https:/
   - Use the Redshift table metadata as the target.
   - Load the processed data from S3 into the corresponding Redshift tables.
 
-  [[Scripts/Load_From_S3_to_Redshift_ETL_Job.ipynb|👉Data Ingestion from S3 to Redshift Script]]
+  [👉Data Ingestion from S3 to Redshift Script](Scripts/Load_From_S3_to_Redshift_ETL_Job.ipynb)
 
-  ![[Diagrams/Load_From_S3_to_Redshift_ETL_Job.png|Load Data from S3 to Redshift]]
+  ![Load Data from S3 to Redshift](Diagrams/Load_From_S3_to_Redshift_ETL_Job.png)
 
 ---
 
