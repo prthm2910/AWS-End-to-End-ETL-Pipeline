@@ -12,7 +12,7 @@ The dataset used for this project is the [Adventure Works Sales Dataset](https:/
 
 ## 📝Data Model 
 
-![Data Model](Diagrams/facts_and_dims.png)
+![Data Model](Diagrams/Facts_and_Dim_Tables.png)
 
 ---
 
@@ -57,7 +57,7 @@ The dataset used for this project is the [Adventure Works Sales Dataset](https:/
 
   [👉ETL Script](Scripts/AW_ETL_Job.ipynb)
 
-  ![ETL Diagram](Diagrams/ETL_Diagram.png|)
+  ![ETL Diagram](Diagrams/ETL_Diagram.png)
 
 ### 4. Processed Data Cataloging
 
