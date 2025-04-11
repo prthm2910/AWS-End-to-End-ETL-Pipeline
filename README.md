@@ -87,11 +87,3 @@ The dataset used for this project is the [Adventure Works Sales Dataset](https:/
 - Redshift now contains clean, analytics-ready datasets for BI tools and Reporting.
 
 ---
-
-## 🚀 Future Enhancements
-
-- Automate pipeline orchestration using AWS Step Functions or Apache Airflow.
-- Integrate monitoring with Amazon CloudWatch.
-- Connect Redshift to Power BI or QuickSight for visualization and reporting.
-
----
